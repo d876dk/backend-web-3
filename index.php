@@ -36,8 +36,18 @@ if (empty($_POST['biografy'])) {
   print('Заполните биографию.<br/>');
   $errors = TRUE;
 }
-
-
+if (empty($_POST['ability'])) {
+  print('Заполните способности.<br/>');
+  $errors = TRUE;
+}
+if (empty($_POST['sex'])) {
+  print('Заполните пол.<br/>');
+  $errors = TRUE;
+}
+if (empty($_POST['arms'])) {
+  print('Заполните пол.<br/>');
+  $errors = TRUE;
+}
 // *************
 // Тут необходимо проверить правильность заполнения всех остальных полей.
 // *************
